@@ -54,8 +54,6 @@ namespace ConvexQuadLib
             return Math.Sqrt(Math.Pow(points2.X - points1.X, 2) + Math.Pow(points2.Y - points1.Y, 2));
         }
 
-        //вычисляет диагональ путем вычисления расстояния от точки до точки в противоположных углах
-
         /// <summary>
         /// Вычисляет и возвращает диагонали заданной фигуры
         /// </summary>
@@ -88,7 +86,9 @@ namespace ConvexQuadLib
             }
             //Console.WriteLine(points[2].X - points[3].X); //не помню зачем это тут
         }
-
+        /// <summary>
+        /// Вычисляет длины сторон. Начиная с левой стороны, по часовой стрелке.
+        /// </summary>
         public virtual void GetSides(out double a, out double b, out double c, out double d)
         {
             a = GetDistanceBetweenPoints(points[0], points[1]);
@@ -100,10 +100,6 @@ namespace ConvexQuadLib
         /// Вычисляет и возвращает значения углов фигуры в градусах 
         /// </summary>
         /// <returns>Углы фигуры, по часовой стрелке начиная с нижнего левого угла</returns>
-        /// <param name="angleA"></param>
-        /// <param name="angleB"></param>
-        /// <param name="angleC"></param>
-        /// <param name="angleD"></param>
         public virtual void GetAngles(out double angleA, out double angleB, out double angleC, out double angleD)
         {
             /*

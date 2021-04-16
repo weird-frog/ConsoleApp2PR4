@@ -33,13 +33,6 @@ namespace ConvexQuadLib
         {
             return GetDistanceBetweenPoints(points[0], points[1]) * 4; //вычисляем длину, умножаем на количество сторон
         }
-        public override void GetSides(out double a, out double b, out double c, out double d)
-        {
-            a = GetDistanceBetweenPoints(points[0], points[1]);
-            b = a;
-            c = a;
-            d = a;
-        }
         public override void GetAngles(out double angleA, out double angleB, out double angleC, out double angleD)
         {
             //углы в квадрате, как ни странно, равны 90 градусам 

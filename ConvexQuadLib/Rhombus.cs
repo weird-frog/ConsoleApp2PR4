@@ -40,13 +40,6 @@ namespace ConvexQuadLib
             angleD = angleB;
 
         }
-        public override void GetSides(out double a, out double b, out double c, out double d)
-        {
-            a = GetDistanceBetweenPoints(points[0], points[1]);
-            b = a;
-            c = a;
-            d = a;
-        }
     }
 }
 

@@ -24,7 +24,7 @@ namespace ConsoleApp2PR4
             convex.GetAngles(out a, out b, out c, out d);
             Console.WriteLine($"ANGLES:\nA = {a}\nB = {b}\nC = {c}\nD = {d}");
             convex.GetDiagonalsLength(out d1, out d2);
-            Console.WriteLine($"\nDIAGONALES:\nd1 = {d1}\nd2 = {d2}");
+            Console.WriteLine($"\nDIAGONALS:\nd1 = {d1}\nd2 = {d2}");
             convex.GetSides(out a, out b, out c, out d);
             Console.WriteLine($"\nSIDES:\na = {a}\nb = {b}\nc = {c}\nd = {d}");
             Console.WriteLine($"Perimeter = {convex.GetPerimeter()}");
@@ -33,10 +33,11 @@ namespace ConsoleApp2PR4
             Console.WriteLine("\n\nPARALLELOGRAM:");
             Parallelogram parallelogram = new Parallelogram(-3, 1, -4, 4, 0, 4, 1, 1);
             parallelogram.DisplayPoints();
+            convex.DisplayPoints();
             parallelogram.GetAngles(out a, out b, out c, out d);
             Console.WriteLine($"ANGLES:\nA = {a}\nB = {b}\nC = {c}\nD = {d}");
             parallelogram.GetDiagonalsLength(out d1, out d2);
-            Console.WriteLine($"\nDIAGONALES:\nd1 = {d1}\nd2 = {d2}");
+            Console.WriteLine($"\nDIAGONALS:\nd1 = {d1}\nd2 = {d2}");
             parallelogram.GetSides(out a, out b, out c, out d);
             Console.WriteLine($"\nSIDES:\na = {a}\nb = {b}\nc = {c}\nd = {d}");
             Console.WriteLine($"Perimeter = {parallelogram.GetPerimeter()}");
@@ -48,7 +49,7 @@ namespace ConsoleApp2PR4
             rhombus.GetAngles(out a, out b, out c, out d);
             Console.WriteLine($"ANGLES:\nA = {a}\nB = {b}\nC = {c}\nD = {d}");
             rhombus.GetDiagonalsLength(out d1, out d2);
-            Console.WriteLine($"\nDIAGONALES:\nd1 = {d1}\nd2 = {d2}");
+            Console.WriteLine($"\nDIAGONALS:\nd1 = {d1}\nd2 = {d2}");
             rhombus.GetSides(out a, out b, out c, out d);
             Console.WriteLine($"\nSIDES:\na = {a}\nb = {b}\nc = {c}\nd = {d}");
             Console.WriteLine($"Perimeter = {rhombus.GetPerimeter()}");
@@ -60,7 +61,7 @@ namespace ConsoleApp2PR4
             sqaure.GetAngles(out a, out b, out c, out d);
             Console.WriteLine($"ANGLES:\nA = {a}\nB = {b}\nC = {c}\nD = {d}");
             sqaure.GetDiagonalsLength(out d1, out d2);
-            Console.WriteLine($"\nDIAGONALES:\nd1 = {d1}\nd2 = {d2}");
+            Console.WriteLine($"\nDIAGONALS:\nd1 = {d1}\nd2 = {d2}");
             sqaure.GetSides(out a, out b, out c, out d);
             Console.WriteLine($"\nSIDES:\na = {a}\nb = {b}\nc = {c}\nd = {d}");
             Console.WriteLine($"Perimeter = {sqaure.GetPerimeter()}");
