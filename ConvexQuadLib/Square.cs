@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConvexQuadLib
 {
@@ -14,7 +10,6 @@ namespace ConvexQuadLib
 
         public Square(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4) : base(x1, y1, x2, y2, x3, y3, x4, y4)
         {
-            //ПЕРЕДЕЛАТЬ НОРМАЛЬНО!!
         }
         /// <summary>
         /// Вычисляет площадь квадрата
@@ -36,6 +31,7 @@ namespace ConvexQuadLib
         public override void GetAngles(out double angleA, out double angleB, out double angleC, out double angleD)
         {
             //углы в квадрате, как ни странно, равны 90 градусам 
+            //интересно, а как насчет того, что юзер выберет квадрат, но введет координаты далеко не квадрата....
             angleA = 90;
             angleB = 90;
             angleC = 90;

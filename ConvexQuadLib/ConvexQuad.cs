@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConvexQuadLib
 {
@@ -48,7 +45,6 @@ namespace ConvexQuadLib
         }
 
         //возвращает расстояние между двумя точками с координатами (x1;y1) и (x2;y2)
-        //расстояние между двумя точками так же является длиной отрезка с координатами (x1;y1) и (x2;y2)
         protected double GetDistanceBetweenPoints(Point points1, Point points2)
         {
             return Math.Sqrt(Math.Pow(points2.X - points1.X, 2) + Math.Pow(points2.Y - points1.Y, 2));
