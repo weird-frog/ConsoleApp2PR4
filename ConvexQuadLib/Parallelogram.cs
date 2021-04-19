@@ -12,7 +12,9 @@ namespace ConvexQuadLib
 
         public override double GetArea()
         {
-            return Math.Abs((points[0].X * points[3].Y) + (points[3].X * points[2].Y) + (points[2].X * points[0].Y)) - ((points[0].X * points[2].Y) + (points[2].X * points[3].Y) + (points[3].X * points[0].Y));
+            return Math.Abs((points[0].X * points[3].Y) + (points[3].X * points[2].Y) + 
+                (points[2].X * points[0].Y)) - ((points[0].X * points[2].Y) + 
+                (points[2].X * points[3].Y) + (points[3].X * points[0].Y));
         }
 
         public override void GetDiagonalsLength(out double d1, out double d2)
@@ -34,6 +36,13 @@ namespace ConvexQuadLib
             angleC = 180 - angleB;
             angleA = 180 - angleB;
             angleD = angleB;
+        }
+        public override void GetSides(out double a, out double b, out double c, out double d)
+        {
+            a = GetDistanceBetweenPoints(points[0], points[1]);
+            b = GetDistanceBetweenPoints(points[1], points[2]);
+            c = a;
+            d = b;
         }
     }
 }

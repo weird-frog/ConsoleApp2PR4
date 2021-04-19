@@ -13,23 +13,11 @@ namespace ConsoleApp2PR4
              *вычисление периметра
              *вычисление площади
              */
-            Console.WriteLine("\n\nCONVEXQUAD:");
-            ConvexQuad convex = new ConvexQuad(1, 1, 1, 3, 3, 4, 3, 1);
-            convex.DisplayPoints();
             double a, b, c, d, d1, d2;
-            convex.GetAngles(out a, out b, out c, out d);
-            Console.WriteLine($"ANGLES:\nA = {a}\nB = {b}\nC = {c}\nD = {d}");
-            convex.GetDiagonalsLength(out d1, out d2);
-            Console.WriteLine($"\nDIAGONALS:\nd1 = {d1}\nd2 = {d2}");
-            convex.GetSides(out a, out b, out c, out d);
-            Console.WriteLine($"\nSIDES:\na = {a}\nb = {b}\nc = {c}\nd = {d}");
-            Console.WriteLine($"Perimeter = {convex.GetPerimeter()}");
-            Console.WriteLine($"Area = {convex.GetArea()}");
 
             Console.WriteLine("\n\nPARALLELOGRAM:");
             Parallelogram parallelogram = new Parallelogram(-3, 1, -4, 4, 0, 4, 1, 1);
             parallelogram.DisplayPoints();
-            convex.DisplayPoints();
             parallelogram.GetAngles(out a, out b, out c, out d);
             Console.WriteLine($"ANGLES:\nA = {a}\nB = {b}\nC = {c}\nD = {d}");
             parallelogram.GetDiagonalsLength(out d1, out d2);

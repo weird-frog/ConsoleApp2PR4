@@ -1,5 +1,6 @@
 ﻿namespace ConvexQuadLib
 {
+    //легкий класс, удобно
     public class Point
     {
         public double X { get; set; }

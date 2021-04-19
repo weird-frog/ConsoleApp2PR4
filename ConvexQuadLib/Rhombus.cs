@@ -13,6 +13,7 @@ namespace ConvexQuadLib
 
         public override double GetArea()
         {
+            //площадь ромба = половина произведения диагоналей
             double d1, d2;
             GetDiagonalsLength(out d1, out d2);
             return (d1 * d2) / 2d;
@@ -31,12 +32,17 @@ namespace ConvexQuadLib
         {
             double d = GetDistanceBetweenPoints(points[0], points[2]),
                 a = GetDistanceBetweenPoints(points[0], points[1]);
-            double ang = Math.Acos((d * d) / (2 * (a * a)) - 1) * 180 / Math.PI;
-            angleA = ang;
-            angleB = (360 - ang * 2d) / 2d;
+            angleA = Math.Acos(d * d / (2 * (a * a)) - 1) * 180 / Math.PI;
+            angleB = (360 - angleA * 2d) / 2d;
             angleC = angleA;
             angleD = angleB;
-
+        }
+        public override void GetSides(out double a, out double b, out double c, out double d)
+        {
+            a = GetDistanceBetweenPoints(points[0], points[1]);
+            b = a;
+            c = a;
+            d = a;
         }
     }
 }
